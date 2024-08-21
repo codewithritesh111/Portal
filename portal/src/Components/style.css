@@ -1,0 +1,75 @@
+
+
+.profilecard {
+   
+    background-color: #f4f4f4;
+    text-decoration: none;
+    padding: 20px;
+    border: none; 
+    width: 340px;
+    height: 310px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profilecard:hover{
+    background-color: #e5e5e5;
+}
+
+
+.profile-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.profilecard-content {
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.name {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.detaillink {
+    margin: 5px 0;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.cardheader{
+    display: flex;
+    flex-direction: row;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cardfooter{
+    margin-top: 10px;
+    
+}
+
+.allcards{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+   margin-top: 40px;
+  
+    
+}
+
+.heading{
+    margin: 30px;
+}

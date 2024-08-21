@@ -1,0 +1,106 @@
+[
+    {
+      "id": "1",
+      "name": "John Doe",
+      "img":"https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg",
+      "email": "johndoe@example.com",
+      "username": "@john.deo",
+      "account": "john.deo12345",
+      "phoneType": "Mobile",
+      "phoneNumber": "+123 456 7890",
+      "location": "Pune, INDIA",
+      "profession": "Software",
+      "w3profile":"https://w3.ibm.com/#/people/0054VS744"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "img":"https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg",
+      "email": "janesmith@example.com",
+      "username": "@jane.smith",
+      "account": "jane.smith9876",
+      "phoneType": "Mobile",
+      "phoneNumber": "+987 654 3210",
+      "location": "Mumbai, INDIA",
+      "profession": "Software",
+      "w3profile":"https://w3.ibm.com/#/people/0054VS744"
+    },
+    {
+      "id": "3",
+      "name": "Michael Johnson",
+      "img":"https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg",
+      "email": "michaelj@example.com",
+      "username": "@michael.j",
+      "account": "michael.jo123",
+      "phoneNumber": "+234 567 8901",
+      "location": "Bangalore, INDIA",
+      "profession": "Software",
+      "w3profile":"https://w3.ibm.com/#/people/0054VS744"
+    },
+    {
+      "id": "4",
+      "name": "Emily Davis",
+      "img":"https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg",
+      "email": "emilydavis@example.com",
+      "username": "@emily.d",
+      "account": "emily.davis456",
+      "phoneType": "Mobile",
+      "phoneNumber": "+345 678 9012",
+      "location": "Chennai, INDIA",
+      "profession": "Software",
+      "w3profile":"https://w3.ibm.com/#/people/0054VS744"
+    },
+    {
+      "id": "4",
+      "name": "Emily Davis",
+      "img":"https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg",
+      "email": "emilydavis@example.com",
+      "username": "@emily.d",
+      "account": "emily.davis456",
+      "phoneType": "Mobile",
+      "phoneNumber": "+345 678 9012",
+      "location": "Chennai, INDIA",
+      "profession": "Software",
+      "w3profile":"https://w3.ibm.com/#/people/0054VS744"
+    },
+    {
+      "id": "4",
+      "name": "Emily Davis",
+      "img":"https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg",
+      "email": "emilydavis@example.com",
+      "username": "@emily.d",
+      "account": "emily.davis456",
+      "phoneType": "Mobile",
+      "phoneNumber": "+345 678 9012",
+      "location": "Chennai, INDIA",
+      "profession": "Software",
+      "w3profile":"https://w3.ibm.com/#/people/0054VS744"
+    },
+    {
+      "id": "4",
+      "name": "Emily Davis",
+      "img":"https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg",
+      "email": "emilydavis@example.com",
+      "username": "@emily.d",
+      "account": "emily.davis456",
+      "phoneType": "Mobile",
+      "phoneNumber": "+345 678 9012",
+      "location": "Chennai, INDIA",
+      "profession": "Software",
+      "w3profile":"https://w3.ibm.com/#/people/0054VS744"
+    },
+    {
+      "id": "4",
+      "name": "Emily Davis",
+      "img":"https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg",
+      "email": "emilydavis@example.com",
+      "username": "@emily.d",
+      "account": "emily.davis456",
+      "phoneType": "Mobile",
+      "phoneNumber": "+345 678 9012",
+      "location": "Chennai, INDIA",
+      "profession": "Software",
+      "w3profile":"https://w3.ibm.com/#/people/0054VS744"
+    }
+  ]
+  
