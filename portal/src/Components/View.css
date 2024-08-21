@@ -1,0 +1,18 @@
+/* src/View.css */
+.container {
+    padding: 20px;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
