@@ -54,8 +54,9 @@ const View = () => {
 
   return (
     <div>
-      <h1>Models</h1>
       
+      <div className="container">
+      <h1>Models</h1>
       {/* Add Submodel Form */}
       <form onSubmit={addModel} className="mb-4">
         <div className="form-group">
@@ -74,7 +75,6 @@ const View = () => {
         </button>
       </form>
 
-      <div className="container">
         <div className="row">
           {models.map((model) => (
             <div key={model._id} className="col-md-4 mb-4">
@@ -88,12 +88,12 @@ const View = () => {
                   >
                     View Team
                   </button>
-                  <button
+                  {/* <button
                     className="btn btn-primary"
                     onClick={() => navigate(`/model/${model._id}`)}
                   >
                     View Models
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

@@ -80,9 +80,9 @@ const View = () => {
                   <p className="card-text">Description or other details about the product</p>
                   <button
                     className="btn btn-primary"
-                    onClick={() => navigate(`/teams/${product._id}`)}
+                    onClick={() => navigate(`/smes`)}
                   >
-                    View Team
+                    View SME's
                   </button>
                   <br />
                   <br />

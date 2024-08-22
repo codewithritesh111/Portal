@@ -52,7 +52,7 @@ const Team = () => {
   };
 
   return (
-    <div>
+    <div className='container'>
       <h2>Teams</h2>
 
       {/* Add Team Form */}
