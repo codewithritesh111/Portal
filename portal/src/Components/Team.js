@@ -52,6 +52,7 @@ const Team = () => {
   };
 
   return (
+    <>
     <div className='container'>
       <h2>Teams</h2>
 
@@ -72,14 +73,18 @@ const Team = () => {
           Add Team
         </button>
       </form>
+      </div>
 
-      <div className="container">
-        <div className="row">
+      <h1 className='heading'>Teams</h1>
+      <hr/>
+      <div className=" ">
+        <div className=" allcards">
           {teams.map((team) => (
-            <div key={team._id} className="col-md-4 mb-4">
-              <div className="card">
+            <div key={team._id} className="col-md-4 mb-4 profilecard">
+              <div className="" style={{ width: '18rem', margin: 'auto' }}>
                 <div className="card-body">
                   <h5 className="card-title">{team.name}</h5>
+                  <hr className="divider" />
                   <button
                     className="btn btn-primary"
                     onClick={() => navigate(`/user/${team._id}`)}
@@ -93,7 +98,7 @@ const Team = () => {
           ))}
         </div>
       </div>
-    </div>
+   </>
   );
 };
 

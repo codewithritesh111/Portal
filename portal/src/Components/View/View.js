@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './View.css';
+import '../style.css';
 import Nav from '../Nav.js';
 
 const View = () => {
@@ -52,7 +53,7 @@ const View = () => {
   return (
     <div>
       <Nav />
-      <div className="container">
+      <div className="container ">
         {/* Add Product Form */}
         <form onSubmit={addProduct} className="mb-4">
           <div className="form-group">
@@ -70,13 +71,23 @@ const View = () => {
             Add Product
           </button>
         </form>
+        </div>
 
-        <div className="row">
+
+        
+        <h1 className='heading'>Products</h1>
+
+
+        <hr/>
+        <div className=" allcards">
+        
           {products.map((product) => (
-            <div key={product._id} className="col-md-4 mb-4">
-              <div className="card" style={{ width: '18rem', margin: 'auto' }}>
+            
+            <div key={product._id} className="col-md-4 mb-4 profilecard">
+              <div className="" style={{ width: '18rem', margin: 'auto' }}>
                 <div className="card-body">
                   <h5 className="card-title">{product.name}</h5>
+                  <hr className="divider" />
                   <p className="card-text">Description or other details about the product</p>
                   <button
                     className="btn btn-primary"
@@ -97,7 +108,7 @@ const View = () => {
             </div>
           ))}
         </div>
-      </div>
+      
     </div>
   );
 };

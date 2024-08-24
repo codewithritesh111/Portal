@@ -1,7 +1,7 @@
 
 
 .profilecard {
-   
+   display: flex;
     background-color: #f4f4f4;
     text-decoration: none;
     padding: 20px;
@@ -10,6 +10,7 @@
     height: 310px;
     margin-bottom: 20px;
     color: #333;
+    margin: 10px;
 }
 
 .profilecard:hover{
@@ -63,7 +64,7 @@
 .allcards{
     width: 100vw;
     display: flex;
-    justify-content: space-around; 
+    justify-content: start;
     flex-wrap: wrap; 
    margin-top: 40px;
   

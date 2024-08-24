@@ -56,7 +56,7 @@ const View = () => {
     <div>
       
       <div className="container">
-      <h1>Models</h1>
+      <h1>Modules</h1>
       {/* Add Submodel Form */}
       <form onSubmit={addModel} className="mb-4">
         <div className="form-group">
@@ -74,13 +74,16 @@ const View = () => {
           Add Submodel
         </button>
       </form>
-
-        <div className="row">
+      </div>
+      <h1 className='heading'>Modules</h1>
+      <hr/>
+        <div className=" allcards">
           {models.map((model) => (
-            <div key={model._id} className="col-md-4 mb-4">
-              <div className="card" style={{ width: '18rem', margin: 'auto' }}>
+            <div key={model._id} className="col-md-4 mb-4 profilecard">
+              <div className="" style={{ width: '18rem', margin: 'auto' }}>
                 <div className="card-body">
                   <h5 className="card-title">{model.name}</h5>
+                  <hr className="divider" />
                   <p className="card-text">Description or other details about the product</p>
                   <button
                     className="btn btn-primary"
@@ -99,7 +102,7 @@ const View = () => {
             </div>
           ))}
         </div>
-      </div>
+    
     </div>
   );
 };

@@ -9,9 +9,11 @@ const Card = ({smes}) => {
   return (
    //class="card-link"></a>
    <>
+   
    <a href={smes.w3profile} className="profilecard">
+   <div>
         <div className="cardheader">
-      <img src={smes.img} alt="User Photo" className="profile-photo" />
+      <img src={smes.img} alt="UserPhoto" className="profile-photo" />
       <h2 className="name">{smes.name}</h2>
       </div>
       <hr className="divider" />
@@ -46,8 +48,9 @@ const Card = ({smes}) => {
       </div>
 
       
-      
+      </div>
     </a>
+    
     </>
   )
 }
