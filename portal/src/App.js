@@ -9,6 +9,7 @@ import SMEScreen from './Components/SMEScreen';
 import Module from './Components/Module';
 import Product from './Components/Product';
 import Teams from './Components/Teams';
+import Users from './Components/Users'
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/" element={<Product />} />
         <Route path="/smes" element={<SMEScreen/>} />
         <Route path="/teams/:id" element={<Teams />} /> {/* Match the team path */}
-        <Route path="/user/:id" element={<User />} /> {/* Match the team path */}
+        <Route path="/user/:id" element={<Users />} /> {/* Match the team path */}
         <Route path="/model/:id" element={<Module />} /> {/* Match the team path */}
       </Routes>
     </Router>

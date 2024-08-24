@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Card from './Card'; // Import Card component
 
 const Team = () => {
   const { id } = useParams(); // Extract the team ID from the URL
@@ -50,8 +51,7 @@ const Team = () => {
   };
 
   return (
-    <div className='container'>
-
+    <div className=''>
       <h3>Add a New User</h3>
       {message && <p>{message}</p>}
       <form onSubmit={handleSubmit}>
@@ -79,23 +79,25 @@ const Team = () => {
           Add User
         </button>
       </form>
-      <br/>
-      <br/>
 
-      <h2>Members</h2>
-      <div className="container">
-        <div className="row">
-          {teams.map((team) => (
-            <div key={team._id} className="col-md-4 mb-4">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">{team.name}</h5>
-                  <h5 className="card-title">Role: {team.role}</h5>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+      <br />
+      <br />
+
+      <h1 className='heading'>Members</h1>
+      <hr />
+      <div className="allcards">
+        {teams.map((team) => (
+          <Card key={team._id} smes={{ 
+            name: team.name, 
+            email: team.email || 'abc@email.com', 
+            username: team.username || '@abc12345', 
+            account: team.account || 'abc.teams.com', 
+            phoneNumber: team.phoneNumber || '8888888888', 
+            location: team.location || 'Pune', 
+            profession: team.profession || 'Web Developer', 
+            img: team.img || 'default_image_url_here' // Replace with a default image URL if necessary 
+          }} />
+        ))}
       </div>
     </div>
   );
