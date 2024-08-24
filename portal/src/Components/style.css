@@ -47,6 +47,7 @@
 .cardheader{
     display: flex;
     flex-direction: row;
+    
 }
 
 .details{
