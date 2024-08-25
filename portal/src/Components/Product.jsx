@@ -50,7 +50,7 @@ const Product = () => {
   };
 
   return (
-    <div>
+    <div className=''>
       <Nav />
       <div className='cardheader'>
       <div className='add'>
@@ -90,7 +90,7 @@ const Product = () => {
                   <br/>
                   <button
                     className="btn btn-primary"
-                    onClick={() => navigate(`/smes`)}
+                    onClick={() => navigate(`/smes/${product._id}`)}
                   >
                     View SME's
                   </button>

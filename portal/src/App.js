@@ -18,7 +18,7 @@ function App() {
       
       <Route path="/smes" element={<SMEScreen/>} />
         <Route path="/" element={<Product />} />
-        <Route path="/smes" element={<SMEScreen/>} />
+        <Route path="/smes/:id" element={<SMEScreen/>} />
         <Route path="/teams/:id" element={<Teams />} /> {/* Match the team path */}
         <Route path="/user/:id" element={<Users />} /> {/* Match the team path */}
         <Route path="/model/:id" element={<Module />} /> {/* Match the team path */}

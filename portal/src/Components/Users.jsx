@@ -92,7 +92,7 @@ const Team = () => {
               account: team.account || 'abc.teams.com',
               phoneNumber: team.phoneNumber || '8888888888',
               location: team.location || 'Pune',
-              profession: team.profession || 'Web Developer',
+              profession: team.role || 'Web Developer',
               img: team.img || 'default_image_url_here', // Replace with a default image URL if necessary
             }}
           />

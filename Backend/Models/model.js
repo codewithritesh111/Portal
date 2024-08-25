@@ -6,6 +6,10 @@ const modelSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Team'
     }],
+    smes: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Smes'
+    }],
     submodels: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Model' // Refers to itself for submodels
