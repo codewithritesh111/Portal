@@ -2,6 +2,7 @@ const express = require('express')
 const Model = require('../Models/model');
 const Team = require('../Models/team');
 const User = require('../Models/user');
+const Smes = require('../Models/smes')
 const app = express()
 
 app.post('/postModel', async (req, res) => {
@@ -216,6 +217,65 @@ app.post('/postProduct', async (req, res) => {
             product: savedProduct,
             updatedIBMModel: ibmStartModel
         });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
+
+app.get('/getSmes', async (req, res) => {
+    try {
+        const teamId = req.header('model-id');
+
+        if (!teamId) {
+            return res.status(400).send('Team ID is required in the header ok.');
+        }
+
+        const team = await Model.findById(teamId).populate('smes')
+
+        if (!team) {
+            return res.status(404).send('Team not found.');
+        }
+
+        res.json(team.smes);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Server error.');
+    }
+});
+
+
+app.post('/postSmes', async (req, res) => {
+    try {
+        const modelId = req.header('model-id');
+        const { name,img,email,username,account,phoneType,phoneNumber,location,profession, w3profile } = req.body;  // Team name from request body
+
+        if (!modelId || !name) {
+            return res.status(400).send('Model ID and team name are required.');
+        }
+
+        // Create a new Sme with no members initially
+        const newSmes = new Smes({
+            name,img,email,username,account,phoneType,phoneNumber,location,profession, w3profile
+        });
+
+        // Save the new team to the database
+        const savedTeam = await newSmes.save();
+
+        // Update the model to include the new submodels
+        const updatedModel = await Model.findByIdAndUpdate(
+            modelId,
+            { $push: { smes: savedTeam._id } },  // Add the new team ID to the model's teams array
+            { new: true, useFindAndModify: false }  // Return the updated model
+        )
+
+        if (!updatedModel) {
+            return res.status(404).send('Model not found.');
+        }
+
+        // Respond with the updated model
+        res.status(200).json(updatedModel);
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: error.message });

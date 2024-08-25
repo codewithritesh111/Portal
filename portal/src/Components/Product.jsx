@@ -50,7 +50,7 @@ const Product = () => {
   };
 
   return (
-    <div>
+    <div className=''>
       <Nav />
       <div className='cardheader'>
       <div className='add'>
@@ -87,7 +87,7 @@ const Product = () => {
                   <p className="card-text">Description or other details about the product</p>
                   <button
                     className="btn btn-primary"
-                    onClick={() => navigate(`/smes`)}
+                    onClick={() => navigate(`/smes/${product._id}`)}
                   >
                     View SME's
                   </button>
