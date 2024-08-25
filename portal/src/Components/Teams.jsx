@@ -87,6 +87,15 @@ const Teams = () => {
               <div className="card-body">
                 <h5 className="card-title">{team.name}</h5>
                 <hr className="divider" />
+               
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sit aspernatur odit.</p>
+
+               <a href="https://www.google.com">GitHub</a>
+               <br/>
+               <br/>
+               <a href="https://www.google.com">Trainings</a>
+<br></br>
+<br/>
                 <button
                   className="btn btn-primary"
                   onClick={() => navigate(`/user/${team._id}`)}

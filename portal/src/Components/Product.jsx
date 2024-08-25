@@ -85,6 +85,9 @@ const Product = () => {
                   <h5 className="card-title">{product.name}</h5>
                   <hr className="divider" />
                   <p className="card-text">Description or other details about the product</p>
+                  <a href="https://www.google.com">Documentation</a>
+                  <br/>
+                  <br/>
                   <button
                     className="btn btn-primary"
                     onClick={() => navigate(`/smes`)}
