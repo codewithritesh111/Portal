@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: Portal
   annotations:
+    backstage.io/techdocs-ref: dir:.
+  annotations:
     github.com/project-slug: codewithritesh111/Portal
   links:
   - url: https://dashboard.example.com
